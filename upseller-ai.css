@@ -58,8 +58,14 @@
 
 .vfrc-chat{
   box-shadow: none;
-  background-color: transparent;
+  background-color: transparent !important;
   border-radius: 16px;
+}
+
+/* Some widget builds add a hashed class (e.g. s9t60i0) that overrides background; target it directly to keep transparency */
+.vfrc-chat.s9t60i0 {
+  background-color: transparent !important;
+  box-shadow: none !important;
 }
 
 .vfrc-chat-dialog__container{
